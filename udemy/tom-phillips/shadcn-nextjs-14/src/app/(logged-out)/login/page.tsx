@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { PasswordInput } from "@/components/ui/password-input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { PersonStandingIcon } from "lucide-react";
 import Link from "next/link";
@@ -58,7 +59,7 @@ function LoginPage() {
                                     <FormItem>
                                         <FormLabel>Pasword</FormLabel>
                                         <FormControl>
-                                            <Input type="password" placeholder="Pasword" {...field} />
+                                            <PasswordInput placeholder="••••••••" {...field} />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
